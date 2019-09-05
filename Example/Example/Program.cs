@@ -10,7 +10,9 @@ namespace Example
     {
         static void Main(string[] args)
         {
+            string infoLine = Console.ReadLine();
             Console.WriteLine("Labas, pasauli!!!");
+            Console.WriteLine(infoLine);
             Console.ReadLine();
         }
     }
