@@ -6,7 +6,7 @@ using TestApp.Models;
 
 namespace TestApp.DataContext
 {
-    class WebApiDataContext : IDataContext
+    public class WebApiDataContext : IDataContext
     {
         public string BaseUrl { get; set; }
 
