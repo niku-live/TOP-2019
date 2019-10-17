@@ -15,7 +15,7 @@ namespace TestApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm(new FakeDataContext()));
+            Application.Run(new MainForm(new WebApiDataContext("https://localhost:44345/api/")));
         }
     }
 }
