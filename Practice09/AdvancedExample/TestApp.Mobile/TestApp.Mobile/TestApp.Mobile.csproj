@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <Configurations>Debug;Release;DebugAndroid</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestApp.Common\TestApp.Common.csproj" />
+    <ProjectReference Include="..\..\TestApp.Data\TestApp.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\StudentDetailPage.xaml.cs">
+      <DependentUpon>StudentDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\StudentsPage.xaml.cs">
+      <DependentUpon>StudentsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NewStudentPage.xaml.cs">
+      <DependentUpon>NewStudentPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
