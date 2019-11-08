@@ -16,11 +16,7 @@ namespace TestMobile
         public MainPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            MyLabel.Text = "You clicked the button";
+            BindingContext = new ViewModels.MainPageViewModel();
         }
     }
 }
